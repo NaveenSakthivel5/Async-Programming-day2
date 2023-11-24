@@ -11,7 +11,7 @@ async function getCountries() {
 
 async function getWeather(latlng) {
     try {
-        let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latlng[0]}&lon=${latlng[1]}&appid=6e2c88c97ecef6db0231bb797c68809d`);
+        let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latlng[0]}&lon=${latlng[1]}&appid=2c42dfd47093ee37970dead62d983f31`);
         let data = await res.json();
         return data;
     } catch (error) {
